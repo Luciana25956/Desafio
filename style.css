@@ -1,0 +1,49 @@
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    margin: 0;
+    background: #f0f0f0;
+}
+header{
+   background-color: #f6f6f6; 
+   color:blue;
+    text-align: center;
+    padding: 15px;
+}
+    
+main{
+    padding: 20px;
+    max-width: 500px;
+    margin:auto;
+}
+.search{
+    display:flex;
+    gap:10px;
+}
+input{
+    flex:1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px; solid #ccc;
+}
+button{
+    padding: 10px 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 6px;
+}
+
+card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+    
+    .search {
+        flex-direction: column;
+    }
+    button {
+        width: 100%;
+    }
+}
