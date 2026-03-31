@@ -3,43 +3,64 @@ body {
     margin: 0;
     background: #f0f0f0;
 }
-header{
-   background-color: #f6f6f6; 
-   color:blue;
+
+header {
+    background-color: #f6f6f6; 
+    color: blue;
     text-align: center;
     padding: 15px;
 }
-    
-main{
+
+main {
     padding: 20px;
     max-width: 500px;
-    margin:auto;
+    margin: auto;
 }
-.search{
-    display:flex;
-    gap:10px;
+
+.search {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
 }
-input{
-    flex:1;
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-}
-button{
+
+button {
     padding: 10px 20px;
     border: none;
     background-color: blue;
     color: white;
     border-radius: 6px;
+    cursor: pointer;
 }
 
-card img{
+button:hover {
+    background-color: darkblue;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card img {
     width: 100%;
     border-radius: 10px;
 }
 
+#map {
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.geo-info {
+    margin-bottom: 5px;
+}
+
 @media (max-width: 500px) {
-    
     .search {
         flex-direction: column;
     }

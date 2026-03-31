@@ -6,6 +6,8 @@
     <title>App Drinks</title>
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 <body>
     
@@ -19,24 +21,24 @@
         </div>
 
         <div id="resultado"></div>
-    </main>
 
-    <script src="script.js"></script>
-
-    <div id="mapa-container">
+        <div id="mapa-container">
             <p id="status-localizacao" class="geo-info">📍 Buscando sua localização...</p>
             <div id="map"></div>
         </div>
+    </main>
 
-        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-         <script src="script.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Script principal -->
+    <script src="script.js"></script>
 
     <script>
-    if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/service-worker.js")
-      .then(() => console.log("Service Worker registrado com sucesso"))
-      .catch((error) => console.log("Erro ao registrar:", error));
-    }
-</script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("/service-worker.js")
+            .then(() => console.log("Service Worker registrado com sucesso"))
+            .catch((error) => console.log("Erro ao registrar:", error));
+        }
+    </script>
 </body>
 </html>
