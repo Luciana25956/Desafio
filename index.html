@@ -22,6 +22,15 @@
     </main>
 
     <script src="script.js"></script>
+
+    <div id="mapa-container">
+            <p id="status-localizacao" class="geo-info">📍 Buscando sua localização...</p>
+            <div id="map"></div>
+        </div>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+         <script src="script.js"></script>
+
     <script>
     if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("/service-worker.js")
